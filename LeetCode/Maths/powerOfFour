@@ -1,0 +1,25 @@
+// approach-1
+
+class Solution {
+    public boolean isPowerOfFour(int n) {
+        double ans = Math.log(n) / Math.log(4);
+        
+        if(ans==(int)ans){
+            return true;
+        }
+        else
+            return false;
+    }
+}
+
+//approach-2
+// class Solution {
+//     public boolean isPowerOfFour(int n) {
+//         if((Math.log(n)/Math.log(4))%1==0){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+// }
